@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="miContenedor">
+    <p>Este es mi parrafo del contenedor</p>
+</div>
+    <script>
+    var Nombre = "Selvin";
+    let Nacimiento = 2003;
+    let Actual = 2025;
+    let Edad = Actual - Nacimiento;
+    
+    console.log("Actual-Nacimiento", Edad)
+    document.write("Mi edad es", Edad)
+    document.write("Mi nombre es", Nombre)
+    document.write("Actual", Actual)
+
+    let hora = 20; 
+
+    if (hora < 12) {
+
+        console.log("Buenos dias");
+
+    } else if (hora < 18)  {
+
+        console.log("Buenas tardes");
+
+    } else {
+
+        console.log("Buenas noches")
+
+    }
+
+    for (let i = 0; i < 6; i++) {
+        console.log("Interaccion" + i);
+    }
+
+    let contador = 0;
+
+while (contador < 10) {
+
+    console.log("Contador de 0 a 9; " + contador);
+
+    contador++;
+}
+
+function saludar(Selvin) {
+    return "Hola, como te encuentras hoy? " + Selvin + "!";
+
+}
+
+console.log(saludar("Pedro"));
+
+console.log(saludar("Maria"));
+
+const tituloag=document.title;
+console.log(tituloag);
+const elemento = document.getElementById("miContenedor");
+document.write(elemento.innerText);
+     </script>
+
+
+
+</body>
+</html>
